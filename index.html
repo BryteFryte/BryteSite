@@ -11,19 +11,20 @@
 
         <div id="container"><div id="header"></div>
             <div id="headerArea">
+            
                 
                 
-            <nav id="navbar" style="margin-bottom: 10px;"><ul>
-                <li><a href="#">Start</a></li>
+            <nav id="navbar" style="margin-bottom:0px;"><ul>
+                <li><a href="#"><b>Start</b></a></li>
                 <li><a href="https://drive.google.com/drive/folders/1AXHLGa5b0rvE7okDRobdWLj7JwZiz3Ij?usp=sharing">My Art</a></li>
                 <li><a href="#">Nature Photo's</a></li>
                 <li><a href="#">File Archive (Google Drive)</a></li>
                 <li><a href="#">My Desktops</a></li>
               </ul></nav></div>
-
+            
             <div id="flex">
-                <aside id="leftSidebar" style="margin-right: 10px;">
-                    <img src="https://brytefryte.github.io/BryteSite/images/FestiveBryte.gif" alt="FestiveBryte">
+                <aside id="leftSidebar" style="margin-right: 0px;">
+                    <img class="BryteF" src="https://brytefryte.github.io/BryteSite/images/FestiveBryte.gif" alt="FestiveBryte">
                     <h2>Here's the TLDR</h2>
                     <div class="box">
                         <p> </p>
@@ -45,6 +46,7 @@
 
                 </aside>
                 <main>
+                    <img class="ads" src="images/ads.png">
                     <h1>Start</h1>
                     <p><strong>Here's a site dedicated to linking you to things that I like and other stuff!!</strong></p>
                     <p>To be Built</p>
@@ -61,7 +63,7 @@
                 </main>
                 
             </div>
-            <footer id="footer" style="margin-top: 10px;">BryteFryte, 2025</footer>
+            <footer id="footer" style="margin-top: 0px;">BryteFryte, 2025</footer>
         </div>
         <!-- THIS IS THE CSS !-->
         <style>
@@ -74,11 +76,13 @@
     the images as variables */
 
             :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-                --body-bg-image: url('https://brytefryte.github.io/BryteSite/backgrounds/WindowsHomeServer.jpg');
+                --header-image: url('https://brytefryte.github.io/BryteSite/images/header.png');
+                --body-bg-image: url('https://brytefryte.github.io/BryteSite/images/Gradient.png');
+                --navbar-image: url('https://brytefryte.github.io/BryteSite/images/headertoolbar');
+                --footer-image: url('https://brytefryte.github.io/BryteSite/images/footer.png');
 
                 /* colors */
-                --content: #43256E;
+                --content: #E0EFF6;
             }
 
             /* if you have the URL of a font, you can set it below */
@@ -117,12 +121,13 @@
             }
 
             body {
-                font-family: 'Segoeui', sans-serif;
+                font-family: 'Segoeui';
                 margin: 0;
-                background-color: #08031A;
+                background-color: #404040;
                 /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #fceaff;
+                background-size: 1500px;
+                color: #404040;
+                width: auto
                 background-image: var(--body-bg-image);
             }
 
@@ -142,7 +147,7 @@
     the other elements, you will need to move that div outside
     of the container */
             #container {
-                max-width: 900px;
+                max-width: 1200px;
                 /* this is the width of your layout! */
                 /* if you change the above value, scroll to the bottom
       and change the media query according to the comment! */
@@ -153,7 +158,7 @@
             /* the area below is for all links on your page
     EXCEPT for the navigation */
             #container a {
-                color: #ED64F5;
+                color: #404040;
                 font-weight: bold;
                 /* if you want to remove the underline
       you can add a line below here that says:
@@ -162,9 +167,9 @@
 
             #header {
                 width: 100%;
-                background-color: #5e4e8c;
+                background-color: #404040;
                 /* header color here! */
-                height: 150px;
+                height: 400px;
                 /* this is only for a background image! */
                 /* if you want to put images IN the header, 
       you can add them directly to the <div id="header"></div> element! */
@@ -174,10 +179,13 @@
 
             /* navigation section!! */
             #navbar {
-                height: 40px;
-                background-color: #13092D;
+                height: 40x;
+                background-color: #E0EFF6;
                 /* navbar color */
                 width: 100%;
+                background-image: var(--navbar-image);
+                background-repeat: repeat;
+                background-size: auto;
             }
 
             #navbar ul {
@@ -192,18 +200,24 @@
                 padding-top: 10px;
             }
 
+            .BryteF {
+                width: 100%;
+            }
+            .ads {
+                width: 90%;
+}
             /* navigation links*/
             #navbar li a {
-                color: #ED64F5;
+                color: #404040;
                 /* navbar text color */
-                font-weight: 800;
+                font-weight: 400;
                 text-decoration: none;
                 /* this removes the underline */
             }
 
             /* navigation link when a link is hovered over */
             #navbar li a:hover {
-                color: #a49cba;
+                color: #404040;
                 text-decoration: underline;
             }
 
@@ -215,7 +229,8 @@
     if you want to style them separately,
     create styles for #leftSidebar and #rightSidebar */
             aside {
-                background-color: #241445;
+                background-image: url();
+                background-color: #E0EFF6;
                 width: 200px;
                 padding: 20px;
                 font-size: smaller;
@@ -226,7 +241,7 @@
             /* this is the color of the main content area,
     between the sidebars! */
             main {
-                background-color: #43256E;
+                background-color: #EFF8FC;
                 flex: 1;
                 padding: 20px;
                 order: 2;
@@ -247,6 +262,7 @@
             }
 
             footer {
+                background-image: image(D:\Documents\Projects\my website\images\footer.png);
                 background-color: #13092D;
                 /* background color for footer */
                 width: 100%;
